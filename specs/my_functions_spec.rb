@@ -13,35 +13,35 @@ class MyFunctionsTest < Minitest::Test
     assert_equal(3, result)
   end
 
-  def test_multiply()
+  def test_multiply
   multiply_result = multiply( 4, 2 )
   assert_equal( 8, multiply_result )
 end
 
-def test_divide()
+def test_divide
   divide_result = divide( 10, 2 )
   assert_equal( 5, divide_result )
 end
 
-def test_length_of_string()
+def test_length_of_string
   test_string = "A string of length 21"
   length_of_string = length_of_string( test_string )
   assert_equal( 21, length_of_string )
 end
 
-def test_join_string()
+def test_join_string
   string_1 = "Mary had a little lamb, "
   string_2 = "it's fleece was white as snow"
   joined_string = join_string( string_1, string_2 )
   assert_equal( "Mary had a little lamb, it's fleece was white as snow", joined_string )
 end
 
-def test_add_string_as_number()
+def test_add_string_as_number
   add_result = add_string_as_number( "1", "2" )
   assert_equal( 3, add_result )
 end
 
-def test_number_to_full_name()
+def test_number_to_full_name
   first_month_string = number_to_full_month_name( 1 )
   third_month_string = number_to_full_month_name( 3 )
   ninth_month_string = number_to_full_month_name( 9 )
@@ -50,7 +50,7 @@ def test_number_to_full_name()
   assert_equal( "September", ninth_month_string )
 end
 
-def test_substring()
+def test_substring
   first_month_string = number_to_short_month_name( 1 )
   third_month_string = number_to_short_month_name( 3 )
   ninth_month_string = number_to_short_month_name( 9 )
@@ -61,11 +61,12 @@ end
 #
 # #Further
 #
-# #Given the length of a side of a cube calculate the volume
-def test_volume_of_cube()
-  #add test code here
+#Given the length of a side of a cube calculate the volume
+def test_volume_of_cube
+  result = volume_of_cube(5)
+  assert_equal(125, result)
 end
-#
+
 # #Given the radius of a sphere calculate the volume
 # def test_volume_of_sphere()
 #   #add test code here
