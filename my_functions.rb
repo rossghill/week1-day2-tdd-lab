@@ -54,6 +54,17 @@ def number_to_short_month_name(number)
   end
 end
 
+# Alternate way ^
+# def number_to_short_month_name(number)
+#   sliced_month_name = number_to_full_month_name(number).slice(0,3)
+#   return sliced_month_name
+# end
+
 def volume_of_cube(length_of_side)
   return length_of_side ** 3
 end
+
+# def volume_of_sphere(radius)
+#   volume = (4.0/ 3.0) * Math::PI * (radius ** 3)
+#   return volume.round(2)
+# end
